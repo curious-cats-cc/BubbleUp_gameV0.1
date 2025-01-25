@@ -37,7 +37,7 @@ public class Gamemanager : MonoBehaviour
 
     [SerializeField] float alt_per_sec;
     float timer = 1;
-    float timerValue;
+    public float altitude { get; private set; }
 
     float altitudepersec = 600;
 
@@ -45,13 +45,13 @@ public class Gamemanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timerValue += Time.deltaTime * altitudepersec * boostMultiplierValue;
-        if (timerValue < 1000)
+        altitude += Time.deltaTime * altitudepersec * boostMultiplierValue;
+        if (altitude < 1000)
         {
-            altitudeTextObj.GetComponent<TextMeshProUGUI>().text = "Altitude: " + timerValue.ToString("F0") + "m";
+            altitudeTextObj.GetComponent<TextMeshProUGUI>().text = altitude.ToString("F0") + "m";
         }
         else {
-            altitudeTextObj.GetComponent<TextMeshProUGUI>().text = "Altitude: " + (timerValue/1000).ToString("F1") + "km";
+            altitudeTextObj.GetComponent<TextMeshProUGUI>().text = (altitude / 1000).ToString("F1") + "km";
         }
 
         print(boostMultiplierValue);
@@ -72,6 +72,7 @@ public class Gamemanager : MonoBehaviour
             {
                 isBoosting = false;
                 isunBoosting = true;
+                elapsedTime = 0;
             }
         }
         else if (isunBoosting)
@@ -92,6 +93,7 @@ public class Gamemanager : MonoBehaviour
                 isunBoosting = false;
                 PlayerHealth.Instance.SetImmortal(false);
                 boostMultiplierValue = 1;
+                elapsedTime = 0;
             }
         }
         

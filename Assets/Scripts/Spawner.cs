@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] GameObject[] Obstacles;
-    [SerializeField] float timer = 3;
-    float timerValue;
+    [SerializeField] protected GameObject[] Obstacles;
+    [SerializeField] protected float timer = 3;
+    protected float timerValue;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,7 +12,7 @@ public class Spawner : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         timerValue -= Time.deltaTime * Gamemanager.Instance.boostMultiplierValue;
         if(timerValue <= 0)

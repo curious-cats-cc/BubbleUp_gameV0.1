@@ -27,8 +27,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(transform.position.x < -2.6)
+        {
+            transform.position = new Vector2(-2.6f, transform.position.y);
+        }
+        else if (transform.position.x > 2.6)
+        {
+            transform.position = new Vector2(2.6f, transform.position.y);
+        }
         direction = inputSystem.Player.Movement.ReadValue<float>();
-        print(direction);
+       
     }
     private void FixedUpdate()
     {
