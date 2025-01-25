@@ -22,7 +22,7 @@ public class Spawner : MonoBehaviour
             timerValue = timer;
 
             GameObject obstacle = Instantiate(solLvls[lvl].Obstacles[Random.Range(0, solLvls[lvl].Obstacles.Length)]);
-            obstacle.transform.position = new Vector2(Random.Range(transform.position.x, transform.position.x + 4), transform.position.y);
+            obstacle.transform.position = new Vector2(Random.Range(transform.position.x, transform.position.x + 5.3f), transform.position.y);
 
         }
 

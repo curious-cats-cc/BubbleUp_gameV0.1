@@ -1,6 +1,5 @@
 using TMPro;
 using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -60,13 +59,13 @@ public class Gamemanager : MonoBehaviour
             boostDurationValue -= Time.deltaTime;
             elapsedTime += Time.deltaTime;
 
-            // Calculate the interpolation factor
+    
             float t = Mathf.Clamp01(elapsedTime / 2);
 
-            // Interpolate the position along the X-axis
+            
             float newX = Mathf.Lerp(1, boosMultiplier, t);
 
-            // Update the object's position
+            
             boostMultiplierValue = newX;
             if(boostDurationValue <= 0)
             {
@@ -79,14 +78,14 @@ public class Gamemanager : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
 
-            // Calculate the interpolation factor
+         
             float t = Mathf.Clamp01(elapsedTime / 3);
 
-            // Interpolate the position along the X-axis
-            float newX = Mathf.Lerp(boosMultiplier, 1, t);
+          
+            float newBoost = Mathf.Lerp(boosMultiplier, 1, t);
 
-            // Update the object's position
-            boostMultiplierValue = newX;
+           
+            boostMultiplierValue = newBoost;
             if(boostMultiplierValue == 1)
             {
                 
