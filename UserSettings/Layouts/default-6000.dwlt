@@ -410,7 +410,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 59.52861}
     m_SelectedIDs: 00b40000
     m_LastClickedID: 46080
-    m_ExpandedIDs: 000000003eb20000
+    m_ExpandedIDs: 0000000028b30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -439,7 +439,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003eb20000
+    m_ExpandedIDs: 0000000028b30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1177,7 +1177,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -1.0517601, y: 0.25390804, z: 0.013954353}
+    m_Target: {x: 302.43872, y: 104.12498, z: -1.1634793}
     speed: 2
     m_Value: {x: -1.0517601, y: 0.25390804, z: 0.013954353}
   m_RenderMode: 0
@@ -1229,7 +1229,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.604549
+    m_Target: 182.75053
     speed: 2
     m_Value: 8.604549
   m_Ortho:
@@ -1304,7 +1304,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 839.1428, y: 407.85715}
+  m_TargetSize: {x: 1468.5, y: 713.75}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1319,10 +1319,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -239.7551
-    m_HBaseRangeMax: 239.7551
-    m_VBaseRangeMin: -116.53062
-    m_VBaseRangeMax: 116.53062
+    m_HBaseRangeMin: -419.57144
+    m_HBaseRangeMax: 419.57144
+    m_VBaseRangeMin: -203.92857
+    m_VBaseRangeMax: 203.92857
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1355,7 +1355,7 @@ MonoBehaviour:
       width: 479.5102
       height: 233.06123
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 0.99999994
   m_LastWindowPixelSize: {x: 1468.5, y: 750.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
