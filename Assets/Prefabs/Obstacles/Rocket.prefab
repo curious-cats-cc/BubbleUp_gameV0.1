@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6554380225877095237
+--- !u!1001 &5210427501352106769
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,25 +8,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 656922693677733773, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
-      propertyPath: m_Size.x
-      value: 0.5612414
+    - target: {fileID: 17211978139440957, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
+      propertyPath: damage
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 656922693677733773, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
-      propertyPath: m_Size.y
-      value: 0.33141565
-      objectReference: {fileID: 0}
-    - target: {fileID: 656922693677733773, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.010446548
-      objectReference: {fileID: 0}
-    - target: {fileID: 656922693677733773, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.013928741
-      objectReference: {fileID: 0}
+    - target: {fileID: 3556236662775272990, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -9158349384845336690, guid: 758a3c195c8b8db48b5834ae144e1289, type: 3}
     - target: {fileID: 3732579851216462981, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
       propertyPath: m_Name
-      value: bread
+      value: Rocket
       objectReference: {fileID: 0}
     - target: {fileID: 6716210659797286166, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
       propertyPath: m_LocalPosition.x
@@ -67,22 +59,6 @@ PrefabInstance:
     - target: {fileID: 6716210659797286166, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6716210659797286166, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8464090409594842622, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8464090409594842622, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8464090409594842622, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

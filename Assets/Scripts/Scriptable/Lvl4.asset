@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f28ba0711dd80f4b964e9ee90473789, type: 3}
+  m_Name: Lvl4
+  m_EditorClassIdentifier: 
+  level: 1
+  Collectibles:
+  - {fileID: 944501319504297321, guid: ef4173e650c0e1540ad9004925a81c11, type: 3}
+  - {fileID: 944501319504297321, guid: b93b7b582d528f842a1a415fc30b854e, type: 3}
+  Obstacles:
+  - {fileID: 8900205425611054996, guid: dccd4ca42a0816f49bfcf59b7588e191, type: 3}
+  - {fileID: 7749045309453458046, guid: 2694d4a5971777041bae92f4e1a96747, type: 3}
+  - {fileID: 1761585735680480002, guid: 536ed9c450c284f46816f339abc30f76, type: 3}
+  chanceCol1: 95
+  chanceCol2: 5

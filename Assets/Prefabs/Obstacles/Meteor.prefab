@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: damage
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3556236662775272990, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2259402801467817881, guid: e7dbc0a25aaa1214c937b26b6e492791, type: 3}
     - target: {fileID: 3732579851216462981, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
       propertyPath: m_Name
       value: Meteor
@@ -59,5 +63,35 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8135882679977626862, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5676286875820986099}
   m_SourcePrefab: {fileID: 100100000, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
+--- !u!1 &6581684629508012905 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8135882679977626862, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
+  m_PrefabInstance: {fileID: 3152134349850736519}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5676286875820986099
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6581684629508012905}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1e71331a3f709f14aaf7ffaee03d7383, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

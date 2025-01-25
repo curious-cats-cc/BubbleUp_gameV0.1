@@ -10,8 +10,14 @@ public class CloudScript : FallingObject
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         spriteRenderer.sprite = sprites[Random.Range(0, sprites.Length)];
+        speed = Random.Range(speed - 50, speed + 40);
     }
-
+    public void Setup(int dir)
+    {
+        if (dir == -1) {
+            horizSpeed = -horizSpeed;
+        }
+    }
     // Update is called once per frame
     protected override void FixedUpdate()
     {

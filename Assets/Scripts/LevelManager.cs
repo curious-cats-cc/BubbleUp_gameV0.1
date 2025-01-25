@@ -4,11 +4,19 @@ public class LevelManager : MonoBehaviour
 {
     [SerializeField] int[] altLevels;
     [SerializeField] int[] taltLevels;
-
-    int level = 1;
+    public static LevelManager Instance { get; private set; }
+    public int level { get; private set; } = 1;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
         
     }
 
