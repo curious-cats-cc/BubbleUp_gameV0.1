@@ -7,11 +7,21 @@ public class Gamemanager : MonoBehaviour
     float timer = 1;
     float timerValue;
 
+    float altitudepersec = 600;
+
     [SerializeField] GameObject altitudeTextObj;
     // Update is called once per frame
     void Update()
     {
-        timerValue += Time.deltaTime * 20;
-        altitudeTextObj.GetComponent<TextMeshProUGUI>().text = "Altitude: " + timerValue.ToString("F0") + "m";
+        timerValue += Time.deltaTime * altitudepersec;
+        if (timerValue < 1000)
+        {
+            altitudeTextObj.GetComponent<TextMeshProUGUI>().text = "Altitude: " + timerValue.ToString("F0") + "m";
+        }
+        else {
+            altitudeTextObj.GetComponent<TextMeshProUGUI>().text = "Altitude: " + (timerValue/1000).ToString("F1") + "km";
+        }
+
+        
     }
 }
