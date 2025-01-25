@@ -13,7 +13,7 @@ public class FallingObject : MonoBehaviour
     // Update is called once per frame
     protected virtual void FixedUpdate()
     {
-        rb.linearVelocityY = -speed * Time.deltaTime;
+        rb.linearVelocityY = -speed * Time.deltaTime * Gamemanager.Instance.boostMultiplierValue;
     }
     private void Update()
     {

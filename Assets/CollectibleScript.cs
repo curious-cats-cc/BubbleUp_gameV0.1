@@ -7,7 +7,9 @@ public class CollectibleScript : FallingObject
     {
         if(collision.tag == "Player")
         {
+            Gamemanager.Instance.IncreaseBoost();
             Destroy(gameObject);
+
         }
     }
 }

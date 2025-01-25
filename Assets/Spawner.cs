@@ -14,7 +14,7 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timerValue -= Time.deltaTime;
+        timerValue -= Time.deltaTime * Gamemanager.Instance.boostMultiplierValue;
         if(timerValue <= 0)
         {
             timerValue = timer;
