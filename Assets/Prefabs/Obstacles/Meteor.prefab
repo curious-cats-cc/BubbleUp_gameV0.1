@@ -16,6 +16,14 @@ PrefabInstance:
       propertyPath: damage
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 656922693677733773, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2426748
+      objectReference: {fileID: 0}
+    - target: {fileID: 656922693677733773, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.12133743
+      objectReference: {fileID: 0}
     - target: {fileID: 3556236662775272990, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
       propertyPath: m_Sprite
       value: 

@@ -12,6 +12,22 @@ PrefabInstance:
       propertyPath: damage
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 656922693677733773, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
+      propertyPath: m_Size.x
+      value: 1.9638534
+      objectReference: {fileID: 0}
+    - target: {fileID: 656922693677733773, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
+      propertyPath: m_Size.y
+      value: 0.14807741
+      objectReference: {fileID: 0}
+    - target: {fileID: 656922693677733773, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0186553
+      objectReference: {fileID: 0}
+    - target: {fileID: 656922693677733773, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0031091943
+      objectReference: {fileID: 0}
     - target: {fileID: 3556236662775272990, guid: 5ad425c03d987de488b0eb4765c29125, type: 3}
       propertyPath: m_Sprite
       value: 

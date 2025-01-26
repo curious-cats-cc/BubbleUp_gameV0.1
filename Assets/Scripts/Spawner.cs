@@ -19,8 +19,9 @@ public class Spawner : MonoBehaviour
         timerValue -= Time.deltaTime * Gamemanager.Instance.boostMultiplierValue;
         if(timerValue <= 0)
         {
-            timerValue = timer;
-
+            timerValue = Random.Range(timer*10-5, timer*10+5)/10.0f;
+            
+          
             GameObject obstacle = Instantiate(solLvls[lvl].Obstacles[Random.Range(0, solLvls[lvl].Obstacles.Length)]);
             obstacle.transform.position = new Vector2(Random.Range(transform.position.x, transform.position.x + 5.3f), transform.position.y);
 

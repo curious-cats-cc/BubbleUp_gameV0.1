@@ -1,8 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    SpriteRenderer spriteRenderer;
+
     InputSystem_Actions inputSystem;
     float direction;
     Rigidbody2D rb;
@@ -15,7 +17,7 @@ public class PlayerController : MonoBehaviour
         inputSystem.Enable();
 
 
-
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -36,7 +38,20 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector2(2.6f, transform.position.y);
         }
         direction = inputSystem.Player.Movement.ReadValue<float>();
-       
+        if(direction == -1)
+        {
+            spriteRenderer.flipX = true;
+            Gamemanager.Instance.PlayerMoved = true;
+        }
+        else if(direction == 1)
+        {
+            spriteRenderer.flipX = false;
+            Gamemanager.Instance.PlayerMoved = true;
+        }
+        else
+        {
+            Gamemanager.Instance.PlayerMoved = false;
+        }
     }
     private void FixedUpdate()
     {

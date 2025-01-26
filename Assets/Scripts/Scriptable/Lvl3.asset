@@ -19,5 +19,5 @@ MonoBehaviour:
   Obstacles:
   - {fileID: 1761585735680480002, guid: 536ed9c450c284f46816f339abc30f76, type: 3}
   - {fileID: 7141159952324960123, guid: 8da4643f94f91d74b9d62e7f2f08c81d, type: 3}
-  chanceCol1: 95
-  chanceCol2: 5
+  chanceCol1: 55
+  chanceCol2: 12

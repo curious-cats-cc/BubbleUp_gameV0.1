@@ -16,14 +16,14 @@ public class collectibleSpawner : Spawner
         timerValue -= Time.deltaTime * Gamemanager.Instance.boostMultiplierValue;
         if (timerValue <= 0)
         {
-            timerValue = timer;
+            timerValue = Random.Range(timer * 10 - 5, timer * 10 + 5) / 10.0f;
             int rand = Random.Range(0, 100);
             
             if (rand <= solLvls[lvl].chanceCol2) {
                 GameObject obstacle = Instantiate(solLvls[lvl].Collectibles[1]);
                 obstacle.transform.position = new Vector2(Random.Range(transform.position.x, transform.position.x + 4), transform.position.y);
             }
-            else
+            else if (rand <= solLvls[lvl].chanceCol1)
             {
                 GameObject obstacle = Instantiate(solLvls[lvl].Collectibles[0]);
                 obstacle.transform.position = new Vector2(Random.Range(transform.position.x, transform.position.x + 4), transform.position.y);

@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(health);
+       
         if (health <= 0)
         {
             print("U died lol");
@@ -40,7 +40,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.tag == "Enemy" && canTakeDamage) { 
             health -= collision.GetComponent<ObstacleScript>().damage;
             HealthPanel.Instance.ChangeHealth();
-            print("DSA ");
+            
         }
     }
     public void increaseHealth(int value = 1)

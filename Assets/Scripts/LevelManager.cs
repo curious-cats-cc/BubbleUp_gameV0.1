@@ -42,7 +42,7 @@ public class LevelManager : MonoBehaviour
         //print(level);
         float alt = Gamemanager.Instance.altitude;
         
-        if (alt > taltLevels[3])
+        if (alt > altLevels[3])
         {
             level = 5;
             colorTransitioning = true;
@@ -50,7 +50,7 @@ public class LevelManager : MonoBehaviour
             targetPoint3 += Time.deltaTime / time * Gamemanager.Instance.boostMultiplierValue;
             cam.GetComponent<Camera>().backgroundColor = Color.Lerp(colors[3], colors[4], targetPoint3);
         }
-        else if(alt > taltLevels[2])
+        else if(alt > altLevels[2])
         {
             level = 4;
             colorTransitioning = true;
@@ -58,7 +58,7 @@ public class LevelManager : MonoBehaviour
             targetPoint2 += Time.deltaTime / time * Gamemanager.Instance.boostMultiplierValue;
             cam.GetComponent<Camera>().backgroundColor = Color.Lerp(colors[2], colors[3], targetPoint2);
         }
-        else if (alt > taltLevels[1])
+        else if (alt > altLevels[1])
         {
             level = 3;
             colorTransitioning = true;
@@ -66,7 +66,7 @@ public class LevelManager : MonoBehaviour
             targetPoint1 += Time.deltaTime / time * Gamemanager.Instance.boostMultiplierValue;
             cam.GetComponent<Camera>().backgroundColor = Color.Lerp(colors[1], colors[2], targetPoint1);
         }
-        else if(alt > taltLevels[0])
+        else if(alt > altLevels[0])
         {
             level = 2;
             

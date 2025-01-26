@@ -12,10 +12,19 @@ public class Gamemanager : MonoBehaviour
     public int boostValue;
     [SerializeField] int maxBoostValue = 4;
     bool canBoost = false;
+
+    [SerializeField] float punishmentTimer = 4;
+    float punishmentTimerValue = 5;
+
+    [SerializeField] GameObject Player;
+    [SerializeField] GameObject Meteor;
+    Vector2 PlayerPos;
     public float boostMultiplierValue { get; private set; } = 1;
     [SerializeField] float boosMultiplier = 20f;
     [SerializeField] float boostDuration = 10;
     float boostDurationValue;
+    public bool PlayerMoved;
+    bool PlayerLastMoved = false;
 
     [SerializeField] GameObject boostCommand;
     float elapsedTime;
@@ -41,10 +50,21 @@ public class Gamemanager : MonoBehaviour
     float altitudepersec = 600;
 
     [SerializeField] GameObject altitudeTextObj;
+
+    private void Start()
+    {
+        
+    }
     // Update is called once per frame
     void Update()
     {
         altitude += Time.deltaTime * altitudepersec * boostMultiplierValue;
+        punishmentTimerValue -= Time.deltaTime;
+        if (PlayerMoved)
+        {
+            punishmentTimerValue = punishmentTimer;
+        }
+
         if (altitude < 1000)
         {
             altitudeTextObj.GetComponent<TextMeshProUGUI>().text = altitude.ToString("F0") + "m";
@@ -53,7 +73,18 @@ public class Gamemanager : MonoBehaviour
             altitudeTextObj.GetComponent<TextMeshProUGUI>().text = (altitude / 1000).ToString("F1") + "km";
         }
 
-        print(boostMultiplierValue);
+        if (Player == null) { return; }
+
+        if (punishmentTimerValue < 0 && !isBoosting && !isunBoosting && PlayerMoved == false && PlayerLastMoved == false)
+        {
+            punishmentTimerValue = punishmentTimer;
+            
+            
+            Instantiate(Meteor, new Vector2(Player.transform.position.x, Player.transform.position.y + 9.5f), Quaternion.identity);
+                
+
+            
+        }
 
         if (isBoosting) {
             boostDurationValue -= Time.deltaTime;
