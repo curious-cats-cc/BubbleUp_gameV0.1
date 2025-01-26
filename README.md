@@ -5,6 +5,7 @@ BubbleUp is a 2D mobile game which follows the ventures of a mouse stuck in a bu
 ## Instructions
 
 ## Implemented features
+**Animated story:** Get to know the main character through emotional storytelling.
 
 **Horizontal movement:** Use the *left* and *right* buttons to navigate through the air.
 
@@ -16,7 +17,9 @@ BubbleUp is a 2D mobile game which follows the ventures of a mouse stuck in a bu
 
 **XP boost:** Recover your health levels by collecting *bubble*s.
 
-**Real-life-inspired:** The objects and background color used in each level follow the natural structure of air surrounding the earth.
+**Pause:** Pause the game with the *pause* button in the top right corner.
+
+**Real-life-inspired:** The objects and background color used in each level follow the natural structure of air surrounding the Earth.
 
 ## In-game controls
 
