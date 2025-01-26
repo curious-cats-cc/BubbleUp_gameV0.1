@@ -16,6 +16,14 @@ PrefabInstance:
       propertyPath: horizSpeed
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 338969038798792468, guid: 40ffffd6a658eca4b859f5459ab0bae3, type: 3}
+      propertyPath: sprites.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 338969038798792468, guid: 40ffffd6a658eca4b859f5459ab0bae3, type: 3}
+      propertyPath: 'sprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -3436780225306344459, guid: c3a2e1e08877917468793e013765fa4b, type: 3}
     - target: {fileID: 4900004129987906514, guid: 40ffffd6a658eca4b859f5459ab0bae3, type: 3}
       propertyPath: m_Name
       value: Aurora

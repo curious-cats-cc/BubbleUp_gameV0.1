@@ -16,7 +16,14 @@ public class CloudSpawner : Spawner
         {
             return;
         }
-        timerValue -= Time.deltaTime * Gamemanager.Instance.boostMultiplierValue;
+        if (lvl == 1) {
+            timerValue -= Time.deltaTime * Gamemanager.Instance.boostMultiplierValue;
+        }
+        else if(lvl == 3)
+        {
+            timerValue -= Time.deltaTime * Gamemanager.Instance.boostMultiplierValue + 2;
+        }
+        
         if (timerValue <= 0)
         {
             timerValue = timer;
