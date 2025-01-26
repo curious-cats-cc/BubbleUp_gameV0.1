@@ -9,6 +9,8 @@ public class AnimManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI textBoxthing;
 
     [SerializeField] string[] texts;
+    [SerializeField]
+    GameObject[] Scenes;
 
     [SerializeField] GameObject barnScene;
     [SerializeField] GameObject miceScene;
@@ -24,6 +26,8 @@ public class AnimManager : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         textBoxthing.text = "";
+        //Scenes[index-1].SetActive(false);
+        //Scenes[index].SetActive(true);
         for (int i = 0; i < texts[index].Length; i++)
         {
             yield return new WaitForSeconds(0.05f);
@@ -50,9 +54,9 @@ public class AnimManager : MonoBehaviour
     IEnumerator SwitchScene()
     {
         yield return new WaitForSeconds(1f);
-        barnScene.SetActive(false);
-        miceScene.SetActive(true);
         textBoxthing.text = "";
+        barnScene.SetActive(false);
+        barnScene.SetActive(true);
         StartCoroutine(enumerator(3,2));
     }
 }

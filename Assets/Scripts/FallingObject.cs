@@ -15,7 +15,7 @@ public class FallingObject : MonoBehaviour
     {
         rb.linearVelocityY = -speed * Time.deltaTime * Gamemanager.Instance.boostMultiplierValue;
     }
-    private void Update()
+    protected virtual void Update()
     {
         if (transform.position.y < -5f)
         {

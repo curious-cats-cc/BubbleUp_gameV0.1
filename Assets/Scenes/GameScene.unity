@@ -338,7 +338,7 @@ MonoBehaviour:
   audioSource: {fileID: 316607274}
   sfxBubble: {fileID: 8300000, guid: 936158637679e4a4eb1b76a44b0c2f6b, type: 3}
   sfxCheese: {fileID: 8300000, guid: 41d88d530b1ce234d81f0209c7404e87, type: 3}
-  sfxPowerUp: {fileID: 8300000, guid: 2ea2a30d22041c84f985be479e808fc2, type: 3}
+  sfxPowerUp: {fileID: 8300000, guid: 2433b79ba1546a842972a8f30b42d359, type: 3}
   sfxHit: {fileID: 8300000, guid: fa415806904cac147bfbacb4a27f5e36, type: 3}
   sfxGameOver: {fileID: 8300000, guid: 16379961fd7cce042a98125d12bcab94, type: 3}
 --- !u!82 &316607274
@@ -351,12 +351,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 40ec5b562d8cd1d42bdac6b07ddfbcd6, type: 3}
+  m_Resource: {fileID: 8300000, guid: 40ec5b562d8cd1d42bdac6b07ddfbcd6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3603,7 +3603,7 @@ MonoBehaviour:
   Obstacles:
   - {fileID: 944501319504297321, guid: ef4173e650c0e1540ad9004925a81c11, type: 3}
   - {fileID: 944501319504297321, guid: b93b7b582d528f842a1a415fc30b854e, type: 3}
-  timer: 3
+  timer: 1.5
 --- !u!1 &2076053849
 GameObject:
   m_ObjectHideFlags: 0

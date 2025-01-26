@@ -21,12 +21,20 @@ public class CloudSpawner : Spawner
         }
         else if(lvl == 3)
         {
-            timerValue -= Time.deltaTime * Gamemanager.Instance.boostMultiplierValue + 2;
+            timerValue -= Time.deltaTime * Gamemanager.Instance.boostMultiplierValue;
         }
         
         if (timerValue <= 0)
         {
-            timerValue = timer;
+            if (lvl == 1)
+            {
+                timerValue = timer;
+            }
+            
+            if(lvl == 3)
+            {
+                timerValue = timer + 1;
+            }
             int rand = Random.Range(0, 2);
             if (lvl == 1)
             {
@@ -36,7 +44,7 @@ public class CloudSpawner : Spawner
             else
             {
                 GameObject obstacle = Instantiate(Obstacles[1]);
-                spawn(rand, obstacle);
+                
             }
             
         }
@@ -47,12 +55,12 @@ public class CloudSpawner : Spawner
         if (rand == 0)
         {
 
-            obstacle.transform.position = new Vector2(transform.position.x + 4, transform.position.y);
+            obstacle.transform.position = new Vector2(transform.position.x + 4, transform.position.y+10);
         }
         else
         {
             obstacle.GetComponent<CloudScript>().Setup(-1);
-            obstacle.transform.position = new Vector2(transform.position.x, transform.position.y);
+            obstacle.transform.position = new Vector2(transform.position.x, transform.position.y+10);
         }
     }
 }

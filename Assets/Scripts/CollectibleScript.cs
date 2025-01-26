@@ -6,6 +6,7 @@ public class CollectibleScript : FallingObject
     {
         if(collision.tag == "Player")
         {
+            SoundEffectsPlayer.Instance.audioSource.PlayOneShot(SoundEffectsPlayer.Instance.sfxCheese);
             Gamemanager.Instance.IncreaseBoost();
             Destroy(gameObject);
 

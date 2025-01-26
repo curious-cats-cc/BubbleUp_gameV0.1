@@ -5,6 +5,7 @@ public class CloudScript : FallingObject
     SpriteRenderer spriteRenderer;
     [SerializeField] Sprite[] sprites;
     [SerializeField] float horizSpeed = 20;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -24,4 +25,6 @@ public class CloudScript : FallingObject
         base.FixedUpdate();
         rb.linearVelocityX = -horizSpeed * Time.deltaTime;
     }
+
+   
 }

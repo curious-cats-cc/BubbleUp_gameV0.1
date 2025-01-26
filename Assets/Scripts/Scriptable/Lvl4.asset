@@ -20,5 +20,5 @@ MonoBehaviour:
   - {fileID: 8900205425611054996, guid: dccd4ca42a0816f49bfcf59b7588e191, type: 3}
   - {fileID: 7749045309453458046, guid: 2694d4a5971777041bae92f4e1a96747, type: 3}
   - {fileID: 1761585735680480002, guid: 536ed9c450c284f46816f339abc30f76, type: 3}
-  chanceCol1: 50
-  chanceCol2: 18
+  chanceCol1: 18
+  chanceCol2: 50

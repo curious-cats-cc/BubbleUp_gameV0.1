@@ -147,6 +147,7 @@ public class Gamemanager : MonoBehaviour
     {
         if (canBoost)
         {
+            SoundEffectsPlayer.Instance.audioSource.PlayOneShot(SoundEffectsPlayer.Instance.sfxPowerUp);
             canBoost = false;
             boostValue = 0;
             boostCommand.GetComponent<Image>().fillAmount = (float)boostValue / (float)maxBoostValue;

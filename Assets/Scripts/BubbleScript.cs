@@ -19,7 +19,7 @@ public class BubbleScript : FallingObject
         if (collision.tag == "Player")
         {
             // sfxScript.playSound(bubble);
-
+            SoundEffectsPlayer.Instance.audioSource.PlayOneShot(SoundEffectsPlayer.Instance.sfxBubble);
             PlayerHealth.Instance.increaseHealth();
             Destroy(gameObject);
 

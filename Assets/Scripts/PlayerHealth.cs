@@ -47,6 +47,7 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         {
             print("U died lol");
+            SoundEffectsPlayer.Instance.audioSource.PlayOneShot(SoundEffectsPlayer.Instance.sfxGameOver);
             Gamemanager.Instance.SwitchScene(3);
         }
     }
@@ -54,6 +55,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.tag == "Enemy" && canTakeDamage) {
             canTakeDamage = false;
+            SoundEffectsPlayer.Instance.audioSource.PlayOneShot(SoundEffectsPlayer.Instance.sfxHit);
             immunTimerValue = immunTimer;
             health -= collision.GetComponent<ObstacleScript>().damage;
             HealthPanel.Instance.ChangeHealth();
