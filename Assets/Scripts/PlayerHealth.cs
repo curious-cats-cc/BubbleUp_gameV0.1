@@ -32,7 +32,7 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         {
             print("U died lol");
-            Gamemanager.Instance.SwitchScene(1);
+            Gamemanager.Instance.SwitchScene(2);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

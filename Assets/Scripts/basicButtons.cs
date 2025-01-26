@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class basicButtons : MonoBehaviour
 {
     public void GoTOScene(int index)
     {
         Time.timeScale = 1;
-        Gamemanager.Instance.SwitchScene(index);
+        SceneManager.LoadScene(index);
     }
     public void Quit()
     {
