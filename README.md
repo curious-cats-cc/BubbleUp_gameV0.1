@@ -34,7 +34,7 @@ Once you collected enough (4) cheese boosters, you can click the **cheese** butt
 ## Contributions
 **Cristian Radu**: Game development, Programming, Bug fixes
 
-**Lilla Bagossi**: Project management, Game design, Sound, Quality assurance
+**Lilla Bagossi**: Project management, Game design, Sound, Quality assurance, Documentation
 
 **Naadiya Saikia**: 2D Art, Animation, Story and narrative, Writing
 
