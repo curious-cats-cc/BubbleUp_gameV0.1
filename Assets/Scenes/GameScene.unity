@@ -535,10 +535,11 @@ MonoBehaviour:
   boostValue: 0
   maxBoostValue: 4
   punishmentTimer: 4
+  Player: {fileID: 873424788}
   Meteor: {fileID: 1761585735680480002, guid: 536ed9c450c284f46816f339abc30f76, type: 3}
   boosMultiplier: 15
   boostDuration: 1.5
-  Player: {fileID: 873424788}
+  PlayerMoved: 0
   boostCommand: {fileID: 2076053849}
   alt_per_sec: 20
   altitudeTextObj: {fileID: 1213797535}
@@ -1620,6 +1621,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 4
+  BubbleMouseScript: {fileID: 0}
+  immunTimer: 0.5
 --- !u!114 &873424795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2091,6 +2094,7 @@ MonoBehaviour:
   solLvls: []
   Obstacles:
   - {fileID: 4900004129987906514, guid: 40ffffd6a658eca4b859f5459ab0bae3, type: 3}
+  - {fileID: 7597726553487750573, guid: 726008300c444d1469836b22412080fc, type: 3}
   timer: 3
 --- !u!1 &1110726119
 GameObject:
@@ -3308,6 +3312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1963036852}
   - component: {fileID: 1963036853}
+  - component: {fileID: 1963036854}
   m_Layer: 0
   m_Name: SpriteBubble
   m_TagString: Untagged
@@ -3385,6 +3390,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1963036854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963036851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e48fcbdda9325344a78e1144fc01a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1991199176
 GameObject:
   m_ObjectHideFlags: 0

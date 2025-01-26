@@ -12,26 +12,40 @@ public class CloudSpawner : Spawner
     protected override void Update()
     {
         int lvl = LevelManager.Instance.level;
-        if(lvl != 1)
+        if(lvl != 1 && lvl != 3)
         {
-            Destroy(gameObject);
+            return;
         }
         timerValue -= Time.deltaTime * Gamemanager.Instance.boostMultiplierValue;
         if (timerValue <= 0)
         {
             timerValue = timer;
             int rand = Random.Range(0, 2);
-            GameObject obstacle = Instantiate(Obstacles[0]);
-            if (rand == 0)
+            if (lvl == 1)
             {
-                
-                obstacle.transform.position = new Vector2(transform.position.x + 4, transform.position.y);
+                GameObject obstacle = Instantiate(Obstacles[0]);
+                spawn(rand, obstacle);
             }
             else
             {
-                obstacle.GetComponent<CloudScript>().Setup(-1);
-                obstacle.transform.position = new Vector2(transform.position.x, transform.position.y);
+                GameObject obstacle = Instantiate(Obstacles[1]);
+                spawn(rand, obstacle);
             }
+            
+        }
+    }
+
+    private void spawn(int rand, GameObject obstacle)
+    {
+        if (rand == 0)
+        {
+
+            obstacle.transform.position = new Vector2(transform.position.x + 4, transform.position.y);
+        }
+        else
+        {
+            obstacle.GetComponent<CloudScript>().Setup(-1);
+            obstacle.transform.position = new Vector2(transform.position.x, transform.position.y);
         }
     }
 }
