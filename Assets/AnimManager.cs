@@ -26,8 +26,12 @@ public class AnimManager : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         textBoxthing.text = "";
-        //Scenes[index-1].SetActive(false);
-        //Scenes[index].SetActive(true);
+        if(index > 0)
+        {
+            Scenes[index - 1].SetActive(false);
+        }
+        
+        Scenes[index].SetActive(true);
         for (int i = 0; i < texts[index].Length; i++)
         {
             yield return new WaitForSeconds(0.05f);
@@ -35,14 +39,11 @@ public class AnimManager : MonoBehaviour
         }
         
 
-        if (index != 2 && index < 5)
+        if (index<3)
         {
             StartCoroutine(enumerator(index + 1, 1));
         }
-        else if(index == 2)
-        {
-            StartCoroutine(SwitchScene());
-        }
+        
         else
         {
             yield return new WaitForSeconds(1.5f);
