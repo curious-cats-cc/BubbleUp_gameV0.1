@@ -33,7 +33,7 @@ You can move horizontally by pressing the **left** and **right** arrows.
 
 Pause the game with the **pause button** in the top right corner. From there, you may go to the **main menu**.
 
-Once you collected enough cheese boosters, you can click the **cheese** button at the bottom center, which will give you a temporary speed boost.
+Once you collected enough cheese boosters, you can click the **cheese** button at the bottom center (press ´´´Space´´´ if you are playing on PC), which will give you a temporary speed boost.
  
 ## Contributions
 **Cristian Radu**: Game development, Programming, Bug fixes
